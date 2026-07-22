@@ -1,0 +1,3 @@
+[submodule "themes/Hugo-Gruvbox-Theme"]
+	path = themes/Hugo-Gruvbox-Theme
+	url = https://github.com/MayADevBe/Hugo-Gruvbox-Theme.git
