@@ -1,4 +1,4 @@
-baseURL = "https://example.org/"
+baseURL = "https://hendrixx-re.github.io/Portfolio-website/"
 locale = "en-us"
 title = "My New Hugo Project"
 theme = "Hugo-Gruvbox-Theme"
@@ -15,9 +15,9 @@ name = "Author Name"
 email = "authorname@example.com"
 
 [params]
-    description = "A Blog about ..."
-    enableRelatedPosts = true
-    relatedPostsNumber = 2
+description = "A Blog about ..."
+enableRelatedPosts = true
+relatedPostsNumber = 2
 
 #Main Menu (below header)
 [[menu.main]]
@@ -52,38 +52,38 @@ icon = "github"
 url = "https://github.com/yourusername"
 
 [taxonomies]
-  tag = "tags"
+tag = "tags"
 
 [markup]
-  [markup.goldmark]
-    [markup.goldmark.renderer]
-      unsafe = true
+[markup.goldmark]
+[markup.goldmark.renderer]
+unsafe = true
 
 pygmentsUseClasses = true
 pygmentsCodefences = true
 [markup.highlight]
-    codeFences = true
-    guessSyntax = true
-    lineNoStart = 1
-    lineNos = true
-    lineNumbersInTable = true
-    tabWidth = 4
-    noClasses = false
+codeFences = true
+guessSyntax = true
+lineNoStart = 1
+lineNos = true
+lineNumbersInTable = true
+tabWidth = 4
+noClasses = false
 
 [markup.tableOfContents]
-  endLevel = 4
-  ordered = false
-  startLevel = 2
+endLevel = 4
+ordered = false
+startLevel = 2
 
 [related]
-  includeNewer = true
-  threshold = 80
-  toLower = true
+includeNewer = true
+threshold = 80
+toLower = true
 
-  [[related.indices]]
-    name = "tags"
-    weight = 100
+[[related.indices]]
+name = "tags"
+weight = 100
 
-  [[related.indices]]
-    name = "date"
-    weight = 10
+[[related.indices]]
+name = "date"
+weight = 10
