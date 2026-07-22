@@ -1,0 +1,89 @@
+baseURL = "https://example.org/"
+locale = "en-us"
+title = "My New Hugo Project"
+theme = "Hugo-Gruvbox-Theme"
+
+copyright = "© Copyright Notice"
+
+#For Pagination
+pagination.pagerSize = 5
+
+enableRobotsTXT = true
+
+[params.author]
+name = "Author Name"
+email = "authorname@example.com"
+
+[params]
+    description = "A Blog about ..."
+    enableRelatedPosts = true
+    relatedPostsNumber = 2
+
+#Main Menu (below header)
+[[menu.main]]
+name = "Home"
+url = "/"
+weight = 1
+
+[[menu.main]]
+name = "All Posts"
+url = "/posts"
+weight = 2
+
+[[menu.main]]
+name = "Tags"
+url = "/tags"
+weight = 3
+
+[[menu.main]]
+name = "About"
+url = "/about"
+weight = 4
+
+[[menu.main]]
+name = "Typing Game"
+url = "/typing-game"
+weight = 5
+
+# Social Media Links (in header)
+[[params.social]]
+name = "Github"
+icon = "github"
+url = "https://github.com/yourusername"
+
+[taxonomies]
+  tag = "tags"
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+
+pygmentsUseClasses = true
+pygmentsCodefences = true
+[markup.highlight]
+    codeFences = true
+    guessSyntax = true
+    lineNoStart = 1
+    lineNos = true
+    lineNumbersInTable = true
+    tabWidth = 4
+    noClasses = false
+
+[markup.tableOfContents]
+  endLevel = 4
+  ordered = false
+  startLevel = 2
+
+[related]
+  includeNewer = true
+  threshold = 80
+  toLower = true
+
+  [[related.indices]]
+    name = "tags"
+    weight = 100
+
+  [[related.indices]]
+    name = "date"
+    weight = 10
