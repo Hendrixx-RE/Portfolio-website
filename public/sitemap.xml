@@ -2,6 +2,12 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>http://localhost:1313/Portfolio-website/</loc>
+    <lastmod>2026-08-27T01:00:00+05:30</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/Portfolio-website/contact/</loc>
+    <lastmod>2026-08-27T01:00:00+05:30</lastmod>
+  </url><url>
     <loc>http://localhost:1313/Portfolio-website/tags/blog/</loc>
     <lastmod>2026-07-22T12:59:00+05:30</lastmod>
   </url><url>
@@ -9,9 +15,6 @@
     <lastmod>2026-07-22T12:59:00+05:30</lastmod>
   </url><url>
     <loc>http://localhost:1313/Portfolio-website/tags/journal/</loc>
-    <lastmod>2026-07-22T12:59:00+05:30</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/Portfolio-website/</loc>
     <lastmod>2026-07-22T12:59:00+05:30</lastmod>
   </url><url>
     <loc>http://localhost:1313/Portfolio-website/posts/</loc>
@@ -22,8 +25,5 @@
   </url><url>
     <loc>http://localhost:1313/Portfolio-website/typing-game/</loc>
     <lastmod>2026-07-21T19:06:10+05:30</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/Portfolio-website/about/</loc>
-    <lastmod>2026-07-21T18:59:00+05:30</lastmod>
   </url>
 </urlset>
