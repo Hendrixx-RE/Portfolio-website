@@ -7,6 +7,6 @@ draft: false
 ## Contact & Links
 - [aanjuanil2012@gmail.com](mailto:aanjuanil2012@gmail.com)
 - +91 6238312844
-- [LinkedIn](https://linkedin.com/in/Atul)
-- [GitHub](https://github.com/Hendrixx)
+- [LinkedIn](https://www.linkedin.com/in/hendrix2060)
+- [GitHub](https://github.com/Hendrixx-RE)
 - [Codeforces](https://codeforces.com/profile/eggpuff)

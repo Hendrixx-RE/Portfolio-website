@@ -32,7 +32,7 @@ GPA: 8.2/10 | Year of Passing: 2027-28
 
 ## Projects
 
-### [Relay – P2P-Based Chat Application](https://github.com/Hendrixx)
+### [Relay – P2P-Based Chat Application](https://github.com/Hendrixx-RE)
 *Go, BitTorrent DHT, TCP, UDP*
 - Built a decentralized, peer-to-peer chat application in Go using a BitTorrent-inspired DHT for peer discovery and direct client connections.
 - Implemented distributed peer discovery, connection management, and concurrent message routing over TCP and UDP.
@@ -44,7 +44,7 @@ GPA: 8.2/10 | Year of Passing: 2027-28
 - Implemented cryptographically-linked audit trails recording every validation outcome, fallback event, and error for regulatory compliance.
 - Designed a custom asynchronous document-splitter pipeline to handle heavy data ingestion without memory bottlenecks, achieving under 30s retrieval time.
 
-### [Orpheus – AI Linux Package Analyzer](https://github.com/Hendrixx)
+### [Orpheus – AI Linux Package Analyzer](https://github.com/Hendrixx-RE)
 *Go, LLM APIs, Linux*
 - Built an AI-powered Linux package analyzer supporting 5 package managers (Pacman, Yay, APT, npm, and pip) through a unified analysis engine.
 - Reduced package indexing latency by 60% using concurrent metadata collection with Go goroutines and channels.
