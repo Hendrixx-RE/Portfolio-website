@@ -32,11 +32,11 @@ GPA: 8.2/10 | Year of Passing: 2027-28
 
 ## Projects
 
-### [Relay – P2P-Based Chat Application](https://github.com/Hendrixx-RE)
-*Go, BitTorrent DHT, TCP, UDP*
-- Built a decentralized, peer-to-peer chat application in Go using a BitTorrent-inspired DHT for peer discovery and direct client connections.
-- Implemented distributed peer discovery, connection management, and concurrent message routing over TCP and UDP.
-- Designed a lightweight custom protocol supporting message serialization, peer identification, and hosted the peer discovery server in my vps.
+### [Vektix – Local Natural-Language File Locator](https://github.com/Hendrixx-RE/Vektix)
+*Go, Ollama/LLM, Hybrid Search (BM25+Vector), Bubble Tea*
+- Built a privacy-first CLI/TUI tool in Go (16.7K LOC, 31% test coverage) that locates and retrieves exact file passages from natural-language queries, running entirely on-device via Ollama with zero cloud calls.
+- Designed a hybrid retrieval engine fusing fuzzy path/trie, BM25, and vector (nomic-embed-text) search arms via Reciprocal Rank Fusion, and a 2-tier intent router pairing a guarded regex fast-path with a schema-constrained 0.5B LLM fallback to avoid model inference on common queries.
+- Engineered safety-critical infrastructure including manifest-based index invalidation, a secrets denylist and path confinement enforced at read time, sandboxed PDF parsing, and background index reconciliation with LRU-based ephemeral scope indexing.
 
 ### Normal-Iceee – Healthcare Claims Platform (Group Project)
 *Python, FastAPI, React, Supabase*
