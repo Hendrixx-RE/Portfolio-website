@@ -24,6 +24,12 @@ GPA: 8.2/10 | Year of Passing: 2027-28
 ## Open Source Contributions
 **Medic Org (cht-core):** Refactored cht-conf backend logic toward a microservices architecture, reducing latency by 20%.
 
+**[Untrivial-ai/agent-orchestrator](https://github.com/Untrivial-ai/agent-orchestrator)** (platform for running and supervising teams of coding agents from planning to merge, across 25+ harnesses and desktop/web/mobile/cloud):
+- Implemented the cloud-plane SCM (source control management) integration layer, enabling agents to plan, branch, and merge against remote repositories.
+- Built the NodeOps provider onboarding flow, adding support for a new compute provider into the orchestrator's agent-execution backend.
+- Shipped multiple reliability fixes to stabilize long-running multi-agent orchestration sessions.
+- Designed and implemented the deeplink sharing system, allowing agent sessions and results to be shared via direct links.
+
 ## Leadership & Achievements
 - **Hackathon Winner:** 1st place at a national-level hackathon hosted by IIT Patna and Jilo Health (Hackmatrix).
 - **Hackathon Winner:** Placed at a national-level hackathon hosted by IISc Bangalore (Rhapsody), competing against 1,500+ participants.
@@ -32,11 +38,11 @@ GPA: 8.2/10 | Year of Passing: 2027-28
 
 ## Projects
 
-### [Vektix – Local Natural-Language File Locator](https://github.com/Hendrixx-RE/Vektix)
-*Go, Ollama/LLM, Hybrid Search (BM25+Vector), Bubble Tea*
-- Built a privacy-first CLI/TUI tool in Go (16.7K LOC, 31% test coverage) that locates and retrieves exact file passages from natural-language queries, running entirely on-device via Ollama with zero cloud calls.
-- Designed a hybrid retrieval engine fusing fuzzy path/trie, BM25, and vector (nomic-embed-text) search arms via Reciprocal Rank Fusion, and a 2-tier intent router pairing a guarded regex fast-path with a schema-constrained 0.5B LLM fallback to avoid model inference on common queries.
-- Engineered safety-critical infrastructure including manifest-based index invalidation, a secrets denylist and path confinement enforced at read time, sandboxed PDF parsing, and background index reconciliation with LRU-based ephemeral scope indexing.
+### Distributed Inference Hoster – Multi-Node Distributed Model Hosting
+*Go, gRPC, Distributed Systems, LLM Inference*
+- Built a distributed inference system that pools compute across multiple networked machines to collaboratively serve a single large model too big to fit on any one node.
+- Designed a tensor/layer-sharding scheme that partitions model weights across peer nodes and pipelines activations between them over gRPC, coordinating a shared inference graph with fault-tolerant node handoff.
+- Implemented a lightweight scheduler and health-check layer to dynamically rebalance shards as nodes join, leave, or fail, keeping end-to-end latency stable under partial cluster failure.
 
 ### Normal-Iceee – Healthcare Claims Platform (Group Project)
 *Python, FastAPI, React, Supabase*
