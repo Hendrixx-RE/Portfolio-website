@@ -38,11 +38,11 @@ GPA: 8.2/10 | Year of Passing: 2027-28
 
 ## Projects
 
-### Distributed Inference Hoster – Multi-Node Distributed Model Hosting
-*Go, gRPC, Distributed Systems, LLM Inference*
-- Built a distributed inference system that pools compute across multiple networked machines to collaboratively serve a single large model too big to fit on any one node.
-- Designed a tensor/layer-sharding scheme that partitions model weights across peer nodes and pipelines activations between them over gRPC, coordinating a shared inference graph with fault-tolerant node handoff.
-- Implemented a lightweight scheduler and health-check layer to dynamically rebalance shards as nodes join, leave, or fail, keeping end-to-end latency stable under partial cluster failure.
+### Cornifer – Repository Intelligence Engine
+*Go, Tree-sitter, PostgreSQL/pgvector, MCP*
+- Built a code intelligence engine that parses codebases into structural (AST to symbols to call graph) and semantic (AST-aware chunks with embeddings and BM25) indexes for accurate code search and analysis.
+- Implemented import and call-graph resolution enabling cross-interface caller lookups, blast-radius impact analysis, and circular-dependency detection via graph traversal and cycle (SCC) detection.
+- Combined BM25, vector similarity, and graph-proximity signals via Reciprocal Rank Fusion, exposing the engine as an MCP server (search_code, find_references, get_blast_radius, and more) so any AI coding tool can query it.
 
 ### Normal-Iceee – Healthcare Claims Platform (Group Project)
 *Python, FastAPI, React, Supabase*
