@@ -1,0 +1,10 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.Language.LanguageCode | default "en" }}">
+{{ partial "head.html" . }}
+<body><a class="skip-link" href="#main">Skip to content</a><div class="portfolio inner-page">
+  {{ partial "header.html" . }}
+  <main id="main"><a class="back-link" href="{{ .Site.Home.RelPermalink }}">← Back to home</a><h1 class="page-title">{{ if eq .Section "posts" }}Writing{{ else }}{{ .Title }}{{ end }}</h1>
+  {{ with .Content }}<div class="markdown">{{ . }}</div>{{ end }}
+  <div class="post-list">{{ range .Pages }}<a class="writing-link" href="{{ .RelPermalink }}"><span>{{ .Title }}</span><time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "Jan 2006" }}</time>{{ partial "icon.html" "arrow" }}</a>{{ end }}</div>
+  </main>{{ partial "footer.html" . }}
+</div></body></html>

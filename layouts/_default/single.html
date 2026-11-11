@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.Language.LanguageCode | default "en" }}">
+{{ partial "head.html" . }}
+<body><a class="skip-link" href="#main">Skip to content</a><div class="portfolio inner-page">
+  {{ partial "header.html" . }}
+  <main id="main"><a class="back-link" href="{{ .Site.Home.RelPermalink }}">← Back to home</a><h1 class="page-title">{{ .Title }}</h1>
+  {{ if eq .Section "posts" }}<p class="post-meta">{{ .Date.Format "January 2, 2006" }} · {{ .ReadingTime }} min read</p>{{ end }}
+  {{ if .Params.toc }}<aside class="table-of-contents">{{ .TableOfContents }}</aside>{{ end }}
+  <article class="markdown">{{ .Content }}</article>
+  {{ with .GetTerms "tags" }}<nav class="post-tags" aria-label="Tags">{{ range . }}<a href="{{ .RelPermalink }}">#{{ .LinkTitle }}</a>{{ end }}</nav>{{ end }}
+  </main>{{ partial "footer.html" . }}
+</div></body></html>

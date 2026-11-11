@@ -1,0 +1,2 @@
+{{- $icons := dict "Go" "go" "Python" "python" "Bash" "gnubash" "JavaScript" "javascript" "C++" "cplusplus" "SQL" "postgresql" "FastAPI" "fastapi" "Gin" "gin" "Docker" "docker" "Git" "git" "Linux" "linux" -}}
+{{- with index $icons . -}}<img src="{{ printf "images/skills/%s.svg" . | relURL }}" alt="" width="14" height="14" loading="lazy">{{- else -}}{{ partial "icon.html" "code" }}{{- end -}}

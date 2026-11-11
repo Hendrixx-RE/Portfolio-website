@@ -1,0 +1,84 @@
+role = "Backend engineer & builder"
+intro = "Hey, I'm Atul, a Computer Engineering student based in Pune, building reliable backends, developer tools, and useful AI products."
+
+[[experience]]
+name = "Jilo Health"
+role = "Software Development Engineer"
+date = "May – Jun 2026"
+mark = "J"
+details = ["Rewrote insurance reconciliation logic in Go, reducing processing latency by 50%.", "Built an AI-powered voice agent to automate routine customer support workflows."]
+
+[[experience]]
+name = "Agent Orchestrator"
+role = "Open-source contributor"
+date = "Open source"
+mark = "AO"
+url = "https://github.com/Untrivial-ai/agent-orchestrator"
+details = ["Implemented cloud-plane source control integrations so agents can plan, branch, and merge against remote repositories.", "Built NodeOps provider onboarding, fixed long-running orchestration sessions, and shipped deeplink sharing."]
+
+[[experience]]
+name = "Medic · CHT Core"
+role = "Open-source contributor"
+date = "Open source"
+mark = "+"
+url = "https://github.com/medic/cht-core"
+details = ["Refactored cht-conf backend logic toward a microservices architecture, reducing latency by 20%."]
+
+[[experience]]
+name = "Army Institute of Technology"
+role = "BE, Computer Engineering"
+date = "Pune · GPA 8.2/10"
+mark = "A"
+details = ["Studying Computer Engineering with a focus on distributed systems, concurrency, and backend engineering.", "Organised Codeft with Coding Cell AIT, bringing together 300+ participants from 50+ colleges."]
+
+[[skills]]
+label = "Languages"
+items = ["Go", "Python", "Bash", "Java", "JavaScript", "C++", "SQL"]
+
+[[skills]]
+label = "Backend"
+items = ["FastAPI", "Gin", "REST APIs", "Microservices"]
+
+[[skills]]
+label = "Tools"
+items = ["Docker", "Git", "Linux", "CI/CD", "Bubble Tea"]
+
+[[skills]]
+label = "Systems"
+extra = true
+items = ["Distributed systems", "Concurrency", "Async I/O", "Event-driven architecture"]
+
+[[skills]]
+label = "Practices"
+extra = true
+items = ["System design", "Data pipelines", "Test-driven development"]
+
+[[projects]]
+name = "Cornifer"
+description = "A repository intelligence engine that maps symbols and call graphs, combines semantic search with BM25, and exposes code search, references, and blast-radius analysis to AI tools through MCP."
+tags = ["Go", "Tree-sitter", "PostgreSQL", "pgvector", "MCP"]
+details = "Resolves imports and cross-interface callers, detects circular dependencies, and combines vector, keyword, and graph signals using Reciprocal Rank Fusion."
+
+[[projects]]
+name = "Normal-Iceee"
+description = "A healthcare claims platform that validates clinical documents against FHIR standards. Asynchronous ingestion and cryptographically linked audit trails make complex document workflows faster and traceable."
+tags = ["Python", "FastAPI", "React", "Supabase"]
+details = "Built as a group project. Reduced manual data entry time by 70% and designed a document-splitting pipeline with retrieval times under 30 seconds."
+
+[[projects]]
+name = "Orpheus"
+description = "An AI-powered Linux package analyzer that brings five package managers into one interface. Ask natural-language questions about packages, dependencies, and safe cleanup."
+tags = ["Go", "LLM APIs", "Linux", "Concurrency"]
+details = "Supports Pacman, Yay, APT, npm, and pip. Concurrent metadata collection with goroutines and channels reduced indexing latency by 60%."
+
+[[achievements]]
+title = "Hackmatrix · 1st place"
+description = "National-level hackathon hosted by IIT Patna and Jilo Health."
+
+[[achievements]]
+title = "Rhapsody · Hackathon winner"
+description = "National-level hackathon at IISc Bangalore with 1,500+ participants."
+
+[[achievements]]
+title = "500+ problems solved"
+description = "Across Codeforces, CSES, and LeetCode. Rated Pupil on Codeforces."
