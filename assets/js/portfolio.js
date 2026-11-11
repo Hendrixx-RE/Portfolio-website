@@ -1,16 +1,6 @@
 (() => {
   'use strict';
 
-  const photoToggle = document.querySelector('.photo-toggle');
-  if (photoToggle) {
-    photoToggle.addEventListener('click', () => {
-      const enabled = photoToggle.getAttribute('aria-pressed') !== 'true';
-      photoToggle.setAttribute('aria-pressed', String(enabled));
-      photoToggle.setAttribute('aria-label', enabled ? 'Show profile photo in monochrome' : 'Show profile photo in color');
-      document.querySelector('.profile-photo').classList.toggle('is-color', enabled);
-    });
-  }
-
   const container = document.getElementById('github-activity');
   if (!container) return;
   const namespace = 'http://www.w3.org/2000/svg';
